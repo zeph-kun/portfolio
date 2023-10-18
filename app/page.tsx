@@ -2,6 +2,8 @@ import Image from 'next/image'
 
 export default function Home() {
   return (
-      <div className="uppercase text-xl tracking-widest	leading-normal text-center">Home</div>
+      <section className={'w-full h-full bg-gray-900'}>
+
+      </section>
   )
 }

@@ -3,6 +3,7 @@ import Navbar from "@/app/components/Navbar";
 import { Inter } from 'next/font/google'
 import localFont from 'next/font/local'
 import './globals.css'
+import Home from "@/app/page";
 
 const vcr = localFont({
   src: [
@@ -32,13 +33,15 @@ export default function RootLayout({
 }) {
   return (
     <html className={`${vcr.variable} font-sans`} lang="en">
-    <head>
-      <title></title>
+      <head>
+        <title></title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-    </head>
+      </head>
       <body>
-      <Navbar />
-      {children}
+        <header>
+          <Navbar />
+        </header>
+        {children}
       </body>
     </html>
   )
