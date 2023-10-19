@@ -3,7 +3,7 @@ import Navbar from "@/app/components/Navbar";
 import { Inter } from 'next/font/google'
 import localFont from 'next/font/local'
 import './globals.css'
-import Home from "@/app/page";
+
 
 const vcr = localFont({
   src: [
@@ -41,7 +41,9 @@ export default function RootLayout({
         <header>
           <Navbar />
         </header>
-        {children}
+        <div className={'container mx-auto'}>
+          {children}
+        </div>
       </body>
     </html>
   )
