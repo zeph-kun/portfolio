@@ -10,20 +10,20 @@ export default function Navbar() {
     };
 
     return (
-        <nav className="text-[#607B96] border border-gray-600">
+        <nav className="text-[#607B96] border-b border-gray-600">
             <div className="md:flex">
                 <div className={'md:flex justify-start items-end'}>
                     <div className="flex flex-row justify-between">
-                        <Link className={'text-xs tracking-widest leading-normal pr-8 pl-16 border-gray-600 py-1'} href="/">matthias-dive</Link>
-                        <div className="hidden md:flex border-x border-gray-600">
+                        <Link className={'text-xs tracking-widest leading-normal pr-8 pl-16 border-r border-gray-600 py-1'} href="/">matthias-dive</Link>
+                        <div className="hidden md:flex">
                             <div className={'border-r border-gray-600'}>
                                 <Link className={'text-xs tracking-widest leading-normal px-8 py-1'} href="/about">_about</Link>
                             </div>
                             <div className={'border-r border-gray-600'}>
                                 <Link className={'text-xs tracking-widest leading-normal px-8 py-2'} href="/projects">_projects</Link>
                             </div>
-                            <div className={'border-gray-600'}>
-                                <Link className={'text-xs tracking-widest leading-normal px-8 py-2'} href="/contact">_contact</Link>
+                            <div className={'border-r border-gray-600 justify-self-end'}>
+                                <Link className={'text-xs tracking-widest leading-normal px-8 py-2'} href="/contact">_contact-me</Link>
                             </div>
                         </div>
 

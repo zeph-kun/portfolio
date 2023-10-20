@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Navbar from "@/app/components/Navbar";
+import Footer from "@/app/components/Footer";
 import { Inter } from 'next/font/google'
 import localFont from 'next/font/local'
 import './globals.css'
@@ -37,13 +38,16 @@ export default function RootLayout({
         <title></title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </head>
-      <body>
+      <body className={'flex flex-col min-h-screen'}>
         <header>
           <Navbar />
         </header>
         <div className={'container mx-auto'}>
           {children}
         </div>
+        <footer className={'mt-auto'}>
+          <Footer></Footer>
+        </footer>
       </body>
     </html>
   )
